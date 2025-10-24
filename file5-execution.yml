@@ -1,0 +1,11 @@
+-
+ name: pb on sample execution of pb
+ hosts: all
+ tasks:
+  - name: code to create a directory
+    command: 
+      cmd: mkdir /opt/hyderabad
+
+  - name: code to create a file inside /opt/hyderabad
+    command:
+      cmd: touch /opt/hyderabad/india.txt
