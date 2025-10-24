@@ -1,14 +1,14 @@
 -
- name: pb on docker installation
+ name: pb on httpd installation
  hosts: all
  tasks: 
-  - name: code to install docker
+  - name: code to install httpd
     yum:
-     name: docker
+     name: httpd
      state: present
     
   - name: code to start the service
     yum:
-     name: docker
+     name: httpd
      state: started
    
