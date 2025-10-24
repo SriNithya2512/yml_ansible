@@ -1,0 +1,14 @@
+-
+ name: pb on docker installation
+ hosts: all
+ tasks: 
+  - name: code to install docker
+    yum:
+     name: docker
+     state: present
+    
+  - name: code to start the service
+    yum:
+     name: docker
+     state: started
+   
