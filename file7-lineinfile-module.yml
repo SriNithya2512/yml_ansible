@@ -1,0 +1,20 @@
+-
+ name: pb on usecase of file module
+ hosts: all
+ tasks:
+  - name: code to create the directory
+    file: 
+     path: /opt/xyz
+     state: directory
+  
+  - name: code to create the file
+    file:
+     path: /opt/xyz/vnr.txt
+     state: touch
+
+  - name: code to write a line
+    lineinfile:
+     path: /opt/xyz/vnr.txt
+     line: "welcome to vnr"
+     state: present
+

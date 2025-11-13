@@ -5,6 +5,6 @@
   - name: code to install git
     yum: 
      name: git
-     status: present
+     state: present
 
   
