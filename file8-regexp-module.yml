@@ -1,0 +1,5 @@
+- name: replace welcome to vnr with hello world
+  lineinfile:
+    path: /opt/xyz/vnr.txt
+    regexp: 'welcome to vnr'
+    line: 'hello world'
